@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class SceneManager : MonoBehaviour
+public class SceneManage : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,8 +17,8 @@ public class SceneManager : MonoBehaviour
         
     }
 
-    void StartToGame()
+    public void StartToGame()
     {
-        //SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Level");
     }
 }
