@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4779173619813180995}
   - component: {fileID: 4779173619813181004}
   - component: {fileID: 4779173619813181005}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wHB
   m_TagString: pAttack
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 4779173620011083702}
   - component: {fileID: 4779173620011083701}
   - component: {fileID: 4779173620011083700}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: nHB
   m_TagString: pAttack
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 4779173620119602862}
   - component: {fileID: 4779173620119602863}
   - component: {fileID: 4779173620119602856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sHB
   m_TagString: pAttack
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 4779173621435699456}
   - component: {fileID: 4779173621435699460}
   - component: {fileID: 4779173621435699461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 4779173621663214847}
   - component: {fileID: 4779173621663214840}
   - component: {fileID: 4779173621663214841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: eHB
   m_TagString: pAttack
   m_Icon: {fileID: 0}

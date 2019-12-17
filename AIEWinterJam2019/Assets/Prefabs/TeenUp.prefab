@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 695191025}
   - component: {fileID: 695191026}
   - component: {fileID: 695191024}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AttackBox
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3557412633108205231}
   - component: {fileID: 3557412633108205230}
   - component: {fileID: 3781946491668567737}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TeenUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1636363, y: 0.94545454}
+    oldSize: {x: 1.6, y: 1.3}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

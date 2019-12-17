@@ -15,10 +15,10 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Table
+  - Pumpkin
   - 
   - 
   - 

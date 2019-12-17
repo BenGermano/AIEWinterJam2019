@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5373846414687041302}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PumpkinVine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4698303726947164871}
   - component: {fileID: 3902691946166412165}
   - component: {fileID: 3869593728805416677}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PumpkinPlain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 938139305239016395}
   - component: {fileID: 2594658960302347724}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vine
   m_TagString: Untagged
   m_Icon: {fileID: 0}

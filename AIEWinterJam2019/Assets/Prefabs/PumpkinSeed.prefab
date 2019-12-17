@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 450855283921388089}
   - component: {fileID: 5525010882883805309}
   - component: {fileID: 3385295731167000953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PumpkinSeed
   m_TagString: pAttack
   m_Icon: {fileID: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6535329396948641926}
   - component: {fileID: 1871873881491305816}
   - component: {fileID: 5240896094766824667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: KidUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
