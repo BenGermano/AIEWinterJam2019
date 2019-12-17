@@ -120,5 +120,22 @@ public class PlayerAnimsTester : MonoBehaviour
         }
         else animator.SetBool("HitDown", false);
         #endregion
+
+        if(!Input.anyKey)
+        {
+            animator.SetBool("Up", false);
+            animator.SetBool("Left", false);
+            animator.SetBool("Right", false);
+            animator.SetBool("Down", false);
+            animator.SetBool("HitDown", false);
+            animator.SetBool("HitUp", false);
+            animator.SetBool("HitLeft", false);
+            animator.SetBool("HitRight", false);
+            animator.SetBool("FireDown", false);
+            animator.SetBool("FireUp", false);
+            animator.SetBool("FireLeft", false);
+            animator.SetBool("FireRight", false);
+            animator.SetBool("Idle", true);
+        }
     }
 }
