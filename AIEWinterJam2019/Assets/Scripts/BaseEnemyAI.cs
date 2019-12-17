@@ -17,6 +17,7 @@ public class BaseEnemyAI : MonoBehaviour
     public bool dead = false;
 
     private float speedModifer = 1;
+    public float spawnDelay = 0;
 
     // Components of the object.
     private Transform target;
@@ -32,7 +33,7 @@ public class BaseEnemyAI : MonoBehaviour
         RB = gameObject.GetComponent<Rigidbody2D>();
 
         target = table.transform;
-        StartCoroutine(Countdown(TimeToCountdownFrom()));
+        StartCoroutine(Countdown(TimeToCountdownFrom() + spawnDelay));
     }
 
     void Update()
