@@ -16,7 +16,7 @@ public class BaseEnemyAI : MonoBehaviour
     public float speed;
     private float timer = 0;
     public bool hasPumpkin = false;
-    private bool isCarving = false;
+    public bool isCarving = false;
     public bool dead = false;
 
     private float speedModifer = 1;
