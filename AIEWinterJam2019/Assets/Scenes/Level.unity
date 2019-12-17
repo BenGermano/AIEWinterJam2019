@@ -1466,7 +1466,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6666667, y: 0.6666667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1708,6 +1708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8b532283e15934e8ec0ddcde03ee63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   table: {fileID: 0}
   pickup: {fileID: 1394417701}
   spawn: {fileID: 730354819}
@@ -2048,6 +2049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8b532283e15934e8ec0ddcde03ee63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   table: {fileID: 0}
   pickup: {fileID: 1394417701}
   spawn: {fileID: 730354819}
@@ -2216,6 +2218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8b532283e15934e8ec0ddcde03ee63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   table: {fileID: 0}
   pickup: {fileID: 1394417701}
   spawn: {fileID: 730354819}
@@ -3526,6 +3529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8b532283e15934e8ec0ddcde03ee63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   table: {fileID: 0}
   pickup: {fileID: 1394417701}
   spawn: {fileID: 730354819}
