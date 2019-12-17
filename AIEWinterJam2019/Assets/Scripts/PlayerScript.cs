@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
     public int eDamage = 10;
     public int pDamage = 10;
     public Rigidbody2D rb;
-    //public GameObject bullet = new GameObject();
+    public GameObject bullet = new GameObject();
     public GameObject nHB, sHB, eHB, wHB;
     //public GameObject projectile = new GameObject();
 
@@ -42,8 +42,6 @@ public class PlayerScript : MonoBehaviour
         //Player attacks with a combination of movement keys + E.
         if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.A))
         {
-            //Rigidbody pP = Instantiate(projectile, rb.transform.position, rb.transform.rotation);
-            //Instantiate(bullet,transform.position, Quaternion.identity);
             wHB.SetActive(true);
         }
         else if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.D))
@@ -67,7 +65,14 @@ public class PlayerScript : MonoBehaviour
             sHB.SetActive(false);
 
         }
-        //When the player dies it will set their health to 0 to prevent healthbars 
+        
+        if(Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.S))
+        {
+            //Rigidbody pP = Instantiate(projectile, rb.transform.position, rb.transform.rotation);
+            Instantiate(bullet,transform.position, Quaternion.identity); 
+        }
+
+        //When the player dies it will set their health to 0 to prevent healthbars from going into the negatives.
         if (health <= 0)
         {
             health = 0;
@@ -77,7 +82,7 @@ public class PlayerScript : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Hazard")
         {
