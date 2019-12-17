@@ -12,23 +12,20 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject bullet;
     public GameObject nHB, sHB, eHB, wHB;
+    public HealthCounter hC;
     //public GameObject projectile = new GameObject();
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //nHB = GameObject.Find("nHb");
-        //sHB = GameObject.Find("sHb");
-        //eHB = GameObject.Find("eHb");
-        //wHB = GameObject.Find("wHb");
-
-        //projectile.GetComponent<Rigidbody2D>();
+        //hC.checkHealthAmount();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         //If the player presses W, A, S, or D, they move.
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) {
             float mHor = Input.GetAxis("Horizontal");

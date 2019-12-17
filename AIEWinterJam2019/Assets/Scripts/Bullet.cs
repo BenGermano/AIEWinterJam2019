@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     {
         if(collision.gameObject.tag == "NPC")
         {
-            Destroy(gameObject);
+            Destroy(gameObject,0);
         }
     }
 }
