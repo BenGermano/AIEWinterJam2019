@@ -438,10 +438,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
+  seedSpeed: 100
   health: 3
   eDamage: 1
   pDamage: 1
   rb: {fileID: 4779173621435699460}
+  bullet: {fileID: 5525010882883805308, guid: 507636e7379e5aa4789d99983ef42ed5, type: 3}
   nHB: {fileID: 4779173620011083703}
   sHB: {fileID: 4779173620119602857}
   eHB: {fileID: 4779173621663214842}
@@ -490,7 +492,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

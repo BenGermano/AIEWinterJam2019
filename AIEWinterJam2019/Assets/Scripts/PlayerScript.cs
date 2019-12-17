@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public float speed = 0;
+    public float seedSpeed = 10;
     public int health = 100;
     public int eDamage = 10;
     public int pDamage = 10;
     public Rigidbody2D rb;
-    public GameObject bullet = new GameObject();
+    public GameObject bullet;
     public GameObject nHB, sHB, eHB, wHB;
     //public GameObject projectile = new GameObject();
 
@@ -65,13 +66,32 @@ public class PlayerScript : MonoBehaviour
             sHB.SetActive(false);
 
         }
-        
-        if(Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.S))
+
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.W))
         {
-            //Rigidbody pP = Instantiate(projectile, rb.transform.position, rb.transform.rotation);
-            Instantiate(bullet,transform.position, Quaternion.identity); 
+            GameObject pP = Instantiate(bullet, transform.position + transform.up * 0.3f, Quaternion.identity);
+            pP.transform.right = Vector3.up;
+            pP.GetComponent<Rigidbody2D>().AddForce(transform.up * seedSpeed);
         }
 
+        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.A))
+        {
+            GameObject pP = Instantiate(bullet, transform.position + transform.right * -0.25f, Quaternion.Euler(0,180,0));
+            pP.GetComponent<Rigidbody2D>().AddForce(transform.right * -seedSpeed);
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.S))
+        {
+            GameObject pP = Instantiate(bullet, transform.position + transform.up * -0.2f, Quaternion.identity);
+            pP.transform.right = Vector3.down;
+            pP.GetComponent<Rigidbody2D>().AddForce(transform.up * -seedSpeed);
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.D))
+        {
+            GameObject pP = Instantiate(bullet, transform.position + transform.right * 0.25f, Quaternion.identity);
+            pP.GetComponent<Rigidbody2D>().AddForce(transform.right * seedSpeed);
+        }
         //When the player dies it will set their health to 0 to prevent healthbars from going into the negatives.
         if (health <= 0)
         {
