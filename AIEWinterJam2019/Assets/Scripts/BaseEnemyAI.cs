@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class BaseEnemyAI : MonoBehaviour
 {
+    // Player references.
+    public PlayerScript player;
+
     // Waypoint game objects.
     public GameObject table;
     public GameObject pickup;
     public GameObject spawn;
-
+    
     // Varables that control behaviour.
     public float speed;
     private float timer = 0;
@@ -49,6 +52,7 @@ public class BaseEnemyAI : MonoBehaviour
                 hasPumpkin = false;
                 Debug.Log("Foolish pumpkin,,,, you are TOO LATE.");
                 // TODO: Take a life from the player here!!!
+                player.health -= 1;
                 StartCoroutine(Countdown(TimeToCountdownFrom()));
             }
         }
@@ -97,6 +101,12 @@ public class BaseEnemyAI : MonoBehaviour
             dead = false;
             target = table.transform;
             StartCoroutine(Countdown(TimeToCountdownFrom()));
+        }
+
+        // Enemy gets hit by an attack.
+        if(collision.gameObject.tag == "pAttack")
+        {
+            dead = true;
         }
     }
 

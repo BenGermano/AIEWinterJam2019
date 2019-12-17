@@ -39,7 +39,7 @@ public class PlayerScript : MonoBehaviour
         rb.AddForce(moveVec * speed);
         }
 
-        //Player attacks with the arrow keys
+        //Player attacks with a combination of movement keys + E.
         if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.A))
         {
             //Rigidbody pP = Instantiate(projectile, rb.transform.position, rb.transform.rotation);
