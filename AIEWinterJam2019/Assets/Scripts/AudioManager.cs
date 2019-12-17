@@ -39,7 +39,9 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        //Play("Music");
+        Play("Music");
+        Play("PunkYell");
+       
     }
 
     public void Play(string name)
