@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5577875232834690861}
   - component: {fileID: 2162393788614564323}
   - component: {fileID: 2162486587752195572}
-  - component: {fileID: 8375375374031876441}
   - component: {fileID: 64304050835639184}
   - component: {fileID: 7409014423234027138}
   - component: {fileID: 3413292996378024469}
+  - component: {fileID: 3748654853734992294}
   m_Layer: 0
   m_Name: KidDown
   m_TagString: Untagged
@@ -105,20 +105,6 @@ MonoBehaviour:
   isCarving: 0
   dead: 0
   spawnDelay: 0
---- !u!114 &8375375374031876441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8550315508608370762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f9662877782e2249a10ee9582c8c8aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 2162486587752195572}
-  animator: {fileID: 3413292996378024469}
 --- !u!61 &64304050835639184
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -165,7 +151,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &3413292996378024469
 Animator:
   serializedVersion: 3
@@ -185,3 +171,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3748654853734992294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8550315508608370762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8312cc7fc3060154a9e4c560d70c4a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 2162486587752195572}
+  animator: {fileID: 3413292996378024469}

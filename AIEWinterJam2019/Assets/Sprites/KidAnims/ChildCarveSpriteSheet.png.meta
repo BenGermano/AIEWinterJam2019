@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: b177a16cf8c73d849bc78739c74e1f09
+guid: c9aae15bcc9f7fa4b982b18635e4a072
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PunkCarryWalkSprite_LeftBack_0
-    21300002: PunkCarryWalkSprite_LeftBack_1
-    21300004: PunkCarryWalkSprite_LeftBack_2
-    21300006: PunkCarryWalkSprite_LeftBack_3
-    21300008: PunkCarryWalkSprite_LeftBack_4
-    21300010: PunkCarryWalkSprite_LeftBack_5
+    21300000: ChildCarveSpriteSheet_0
+    21300002: ChildCarveSpriteSheet_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -123,72 +119,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PunkCarryWalkSprite_LeftBack_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 52
-        width: 64
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29b56b973c6b1304b897839473a8308d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunkCarryWalkSprite_LeftBack_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 52
-        width: 64
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2001afaa6225ecd4cbc7b8607e07a19b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunkCarryWalkSprite_LeftBack_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 52
-        width: 64
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f53edc098e123b4cb2c5816d12b68d0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunkCarryWalkSprite_LeftBack_3
+      name: ChildCarveSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 65
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -197,18 +133,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c308fcfd4a4170742a37c4b2f7a1f167
+      spriteID: 0a8a496e5e046ed4e9d89e868ab8c332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PunkCarryWalkSprite_LeftBack_4
+      name: ChildCarveSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 0
-        width: 64
+        width: 65
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -217,27 +153,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbaee2f981b0eae47a5f981b95c2f0f7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunkCarryWalkSprite_LeftBack_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50a9ec4aa9fa2cc42b10b1a97e91cbfe
+      spriteID: cb5bad5d004a1da48b74b0ed11908ca6
       vertices: []
       indices: 
       edges: []
@@ -245,7 +161,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: dafc01b7b09f3df4ab1b084e41c2cd2e
+    spriteID: 0091742ac6596674eac0324aadea5a16
     vertices: []
     indices: 
     edges: []

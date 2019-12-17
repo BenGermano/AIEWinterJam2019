@@ -31,7 +31,7 @@ public class TeenDownAnim : MonoBehaviour
         if (enemy.isCarving == true)
         {
             animator.SetBool("Carving", true);
-            animator.SetBool("CarryDown", false);
+            animator.SetBool("CarryUp", false);
             animator.SetBool("Down", false);
         }
     }
