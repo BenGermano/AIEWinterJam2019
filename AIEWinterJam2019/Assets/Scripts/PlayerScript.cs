@@ -40,21 +40,21 @@ public class PlayerScript : MonoBehaviour
         }
 
         //Player attacks with the arrow keys
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.A))
         {
             //Rigidbody pP = Instantiate(projectile, rb.transform.position, rb.transform.rotation);
             //Instantiate(bullet,transform.position, Quaternion.identity);
             wHB.SetActive(true);
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.D))
         {
             eHB.SetActive(true);
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.W))
         {
             nHB.SetActive(true);
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.S))
         {
             sHB.SetActive(true);
         }
