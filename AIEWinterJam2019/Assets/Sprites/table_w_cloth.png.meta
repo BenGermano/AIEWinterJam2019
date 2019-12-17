@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 277b6a14040e1894bb14dff19865cc4a
+guid: 45462c87aafe0a04d8e7f1f7a9810592
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Pumpkin_Death_SpriteS_0
-    21300002: Pumpkin_Death_SpriteS_1
-    21300004: Pumpkin_Death_SpriteS_2
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -35,7 +32,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
+    aniso: 1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -43,12 +40,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 130
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,71 +115,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 40
-        height: 40
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: add0eeb53c9b9a04fb5b971512ffdc27
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 40
-        height: 40
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e39ffd56addb9894db19669bc5ae96ba
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_2
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 40
-        height: 40
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6416fb649ac685e4e932a89de7171d32
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 42d3af6bf6a70f047863f6bfb65410be
+    spriteID: 05021bc8da0c6b544be00a6f013ecebf
     vertices: []
     indices: 
     edges: []

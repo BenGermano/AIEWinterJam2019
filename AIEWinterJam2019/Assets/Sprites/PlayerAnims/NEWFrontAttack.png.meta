@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 277b6a14040e1894bb14dff19865cc4a
+guid: 95263bbb8f1cd3044a35b9588ccf3638
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Pumpkin_Death_SpriteS_0
-    21300002: Pumpkin_Death_SpriteS_1
-    21300004: Pumpkin_Death_SpriteS_2
+    21300000: NEWFrontAttack_0
+    21300002: NEWFrontAttack_1
+    21300004: NEWFrontAttack_2
+    21300006: NEWFrontAttack_3
+    21300008: NEWFrontAttack_4
+    21300010: NEWFrontAttack_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -120,61 +123,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_0
+      name: NEWFrontAttack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 60
+        height: 60
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add0eeb53c9b9a04fb5b971512ffdc27
+      spriteID: 35e7e24b5db96ca4cbb45f702de76a77
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_1
+      name: NEWFrontAttack_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 60
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 60
+        height: 60
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39ffd56addb9894db19669bc5ae96ba
+      spriteID: 79844e78ffad3ac4295607febca2b3bb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_2
+      name: NEWFrontAttack_2
       rect:
         serializedVersion: 2
-        x: 80
+        x: 120
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 60
+        height: 60
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6416fb649ac685e4e932a89de7171d32
+      spriteID: de6882cf62d1b6a48adaac741a69cc81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEWFrontAttack_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242606708329ded4fa572a13b2c70827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEWFrontAttack_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac481348e00c2b4ca27fcedc0252838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEWFrontAttack_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5796fde1ad0674ca13bb9c6ce49257
       vertices: []
       indices: 
       edges: []
@@ -182,7 +245,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 42d3af6bf6a70f047863f6bfb65410be
+    spriteID: bb9fce84cdd554d44ac97746ebf8c2b5
     vertices: []
     indices: 
     edges: []

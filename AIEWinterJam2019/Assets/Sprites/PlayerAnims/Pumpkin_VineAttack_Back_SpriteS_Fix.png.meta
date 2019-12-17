@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 277b6a14040e1894bb14dff19865cc4a
+guid: 20522ee13b4e1124cb47d5144bbfae49
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Pumpkin_Death_SpriteS_0
-    21300002: Pumpkin_Death_SpriteS_1
-    21300004: Pumpkin_Death_SpriteS_2
+    21300000: Pumpkin_VineAttack_Back_SpriteS_Fix_0
+    21300002: Pumpkin_VineAttack_Back_SpriteS_Fix_1
+    21300004: Pumpkin_VineAttack_Back_SpriteS_Fix_2
+    21300006: Pumpkin_VineAttack_Back_SpriteS_Fix_3
+    21300008: Pumpkin_VineAttack_Back_SpriteS_Fix_4
+    21300010: Pumpkin_VineAttack_Back_SpriteS_Fix_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -120,61 +123,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_0
+      name: Pumpkin_VineAttack_Back_SpriteS_Fix_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 100
+        height: 100
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add0eeb53c9b9a04fb5b971512ffdc27
+      spriteID: 3b357021ff3d7424fa5bdf122a6588de
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_1
+      name: Pumpkin_VineAttack_Back_SpriteS_Fix_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 100
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 100
+        height: 100
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39ffd56addb9894db19669bc5ae96ba
+      spriteID: 9c7811a1d71fa954ca5e930e25f65b93
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_2
+      name: Pumpkin_VineAttack_Back_SpriteS_Fix_2
       rect:
         serializedVersion: 2
-        x: 80
+        x: 200
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 100
+        height: 100
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6416fb649ac685e4e932a89de7171d32
+      spriteID: 5112236414512df47ac69edd202c3bbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpkin_VineAttack_Back_SpriteS_Fix_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc34a1b48ae3ac4496c0e212093acb6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpkin_VineAttack_Back_SpriteS_Fix_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8012032f855a9a24b980a159856f1f51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpkin_VineAttack_Back_SpriteS_Fix_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17015d2012eacbf4eb27f16be86f12f3
       vertices: []
       indices: 
       edges: []
@@ -182,7 +245,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 42d3af6bf6a70f047863f6bfb65410be
+    spriteID: 11f218af0a9f6f44793dc7f554e6eefe
     vertices: []
     indices: 
     edges: []

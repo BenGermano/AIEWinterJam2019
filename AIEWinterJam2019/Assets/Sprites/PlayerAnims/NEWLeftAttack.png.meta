@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 277b6a14040e1894bb14dff19865cc4a
+guid: 787555e0d3724ff4b901659ff25653b5
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Pumpkin_Death_SpriteS_0
-    21300002: Pumpkin_Death_SpriteS_1
-    21300004: Pumpkin_Death_SpriteS_2
+    21300000: NEWLeftAttack_0
+    21300002: NEWLeftAttack_1
+    21300004: NEWLeftAttack_2
+    21300006: NEWLeftAttack_3
+    21300008: NEWLeftAttack_4
+    21300010: NEWLeftAttack_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -120,61 +123,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_0
+      name: NEWLeftAttack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 75
+        height: 75
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add0eeb53c9b9a04fb5b971512ffdc27
+      spriteID: a0569a7a37f623841a6a66b922cb2501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_1
+      name: NEWLeftAttack_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 75
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 75
+        height: 75
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39ffd56addb9894db19669bc5ae96ba
+      spriteID: 205c36bc7a09dba449f482ea045e942f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_2
+      name: NEWLeftAttack_2
       rect:
         serializedVersion: 2
-        x: 80
+        x: 150
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 75
+        height: 75
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6416fb649ac685e4e932a89de7171d32
+      spriteID: 99b6423004a611249a1ef434b9729208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEWLeftAttack_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53be24f99e14cf84bb103bcb124005a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEWLeftAttack_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f281b6f100acdb04babc445ac6842d93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEWLeftAttack_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2964e61fd6e8fbf4bb86142093957044
       vertices: []
       indices: 
       edges: []
@@ -182,7 +245,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 42d3af6bf6a70f047863f6bfb65410be
+    spriteID: 3f3c5dd788a995941904de28ed1d833b
     vertices: []
     indices: 
     edges: []

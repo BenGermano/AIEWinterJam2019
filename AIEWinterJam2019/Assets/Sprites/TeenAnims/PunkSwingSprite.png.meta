@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 55
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,7 +125,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 65
+        width: 64
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,7 +134,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbeadd3c136bf1a4e880fa05b6eb437c
+      spriteID: a36878410560bd644a757a3e5f16b4bd
       vertices: []
       indices: 
       edges: []
@@ -143,9 +143,9 @@ TextureImporter:
       name: PunkSwingSprite_1
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 65
+        width: 64
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cae34b7777b3ba442920a6de512bf73e
+      spriteID: 71cb0a9418f91e141b6e8c3ca9d61709
       vertices: []
       indices: 
       edges: []
@@ -163,9 +163,9 @@ TextureImporter:
       name: PunkSwingSprite_2
       rect:
         serializedVersion: 2
-        x: 130
+        x: 128
         y: 0
-        width: 65
+        width: 64
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -174,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78d1cc9b5a7abe84e974cc947b3c0a03
+      spriteID: da84514dae0348343a4f54e942984649
       vertices: []
       indices: 
       edges: []

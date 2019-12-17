@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 277b6a14040e1894bb14dff19865cc4a
+guid: 555f466735e5c4b4cb0279f110649015
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Pumpkin_Death_SpriteS_0
-    21300002: Pumpkin_Death_SpriteS_1
-    21300004: Pumpkin_Death_SpriteS_2
+    21300000: PunkWalkSprite_RightFront_0
+    21300002: PunkWalkSprite_RightFront_1
+    21300004: PunkWalkSprite_RightFront_2
+    21300006: PunkWalkSprite_RightFront_3
+    21300008: PunkWalkSprite_RightFront_4
+    21300010: PunkWalkSprite_RightFront_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -48,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 55
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,61 +123,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_0
+      name: PunkWalkSprite_RightFront_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e01b51d9e41af2478e4d4c01dec9606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PunkWalkSprite_RightFront_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 52
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4c29ce3787e2f42a71088353bb1e3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PunkWalkSprite_RightFront_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 52
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b2bb5801bab294c8c6dcce15374e36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PunkWalkSprite_RightFront_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 64
+        height: 52
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add0eeb53c9b9a04fb5b971512ffdc27
+      spriteID: dd3630c98cc8f1c42a42a2c071ba2db3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_1
+      name: PunkWalkSprite_RightFront_4
       rect:
         serializedVersion: 2
-        x: 40
+        x: 64
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 64
+        height: 52
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39ffd56addb9894db19669bc5ae96ba
+      spriteID: fd8974eb155b38d4bb912a0e9d10cb36
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pumpkin_Death_SpriteS_2
+      name: PunkWalkSprite_RightFront_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 128
         y: 0
-        width: 40
-        height: 40
-      alignment: 6
+        width: 64
+        height: 52
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6416fb649ac685e4e932a89de7171d32
+      spriteID: 2974642630ddbcd448da74abecc9500a
       vertices: []
       indices: 
       edges: []
@@ -182,7 +245,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 42d3af6bf6a70f047863f6bfb65410be
+    spriteID: cc44383aa0772b1489a910b03823c3d6
     vertices: []
     indices: 
     edges: []
