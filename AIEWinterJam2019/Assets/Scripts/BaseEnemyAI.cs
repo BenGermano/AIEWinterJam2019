@@ -129,6 +129,7 @@ public class BaseEnemyAI : MonoBehaviour
         if(collision.gameObject.tag == "pAttack")
         {
             dead = true;
+            FindObjectOfType<AudioManager>().Play("EnemyDamaged");
         }
     }
 
@@ -155,12 +156,12 @@ public class BaseEnemyAI : MonoBehaviour
     // Sends the enemy back to the spawnpoint.
     private void Die()
     {
+        
         isCarving = false;
         hasPumpkin = false;
         spr.enabled = false;
         target = spawn.transform;
         speedModifer = 100;
         timer = 0;
-        FindObjectOfType<AudioManager>().Play("EnemyDamaged");
     }
 }
