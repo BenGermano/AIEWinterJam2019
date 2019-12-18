@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject bullet;
     public GameObject nHB, sHB, eHB, wHB;
     public HealthCounter hC;
+    public AudioSource audioSource;
     //public GameObject projectile = new GameObject();
 
     // Start is called before the first frame update
@@ -42,7 +43,14 @@ public class PlayerScript : MonoBehaviour
             Vector2 moveVec = new Vector2(mHor, mVer);
         //transform(moveVec);
         rb.AddForce(moveVec * speed);
+
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+
         }
+        else audioSource.Stop();
 
         //Player attacks with a combination of movement keys + E.
         if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.A))
