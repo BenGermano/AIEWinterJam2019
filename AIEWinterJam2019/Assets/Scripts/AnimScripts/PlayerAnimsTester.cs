@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAnimsTester : MonoBehaviour
 {
     public Animator animator;
+    public AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class PlayerAnimsTester : MonoBehaviour
             animator.SetBool("Up", false);
             animator.SetBool("Down", false);
             animator.SetBool("Idle", false);
+            //audioManager.Play("PumpkinWalking");
         }
         else animator.SetBool("Right", false);
 

@@ -20,6 +20,11 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        nHB.SetActive(false);
+        eHB.SetActive(false);
+        sHB.SetActive(false);
+        wHB.SetActive(false);
+
         //hC.checkHealthAmount();
     }
 
