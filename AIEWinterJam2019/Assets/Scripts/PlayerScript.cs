@@ -95,6 +95,12 @@ public class PlayerScript : MonoBehaviour
             GameObject pP = Instantiate(bullet, transform.position + transform.right * 0.25f, Quaternion.identity);
             pP.GetComponent<Rigidbody2D>().AddForce(transform.right * seedSpeed);
         }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameObject pP = Instantiate(bullet, transform.position + transform.up * -0.2f, Quaternion.identity);
+            pP.transform.right = Vector3.down;
+            pP.GetComponent<Rigidbody2D>().AddForce(transform.up * -seedSpeed);
+        }
         //When the player dies it will set their health to 0 to prevent healthbars from going into the negatives.
         if (health <= 0)
         {
