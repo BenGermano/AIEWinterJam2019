@@ -42,8 +42,8 @@ public class TeenDownAnim : MonoBehaviour
         {
             animator.SetBool("Attack", true);
             animator.SetBool("Carving", false);
-            animator.SetBool("CarryDown", false);
-            animator.SetBool("Up", false);
+            animator.SetBool("CarryUp", false);
+            animator.SetBool("Down", false);
         }
         else animator.SetBool("Attack", false);
     }
