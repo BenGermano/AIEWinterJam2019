@@ -6,6 +6,7 @@ TagManager:
   tags:
   - pAttack
   - Hazard
+  - NPC
   layers:
   - Default
   - TransparentFX

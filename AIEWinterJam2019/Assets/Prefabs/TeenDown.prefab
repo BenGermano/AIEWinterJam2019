@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 8783418141357469261}
   m_Layer: 9
   m_Name: TeenDown
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,6 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 3557412633108205231}
   animator: {fileID: 3557412633108205230}
+  teen: {fileID: 5402193494547974806}
 --- !u!1 &8126130069423346825
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +345,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.28
 --- !u!50 &9083162561829680276
 Rigidbody2D:
   serializedVersion: 4

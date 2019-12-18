@@ -16,4 +16,12 @@ public class TeenEnemyAttackAI : MonoBehaviour
             isAttacking = true;
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("UH OH");
+            isAttacking = false;
+        }
+    }
 }

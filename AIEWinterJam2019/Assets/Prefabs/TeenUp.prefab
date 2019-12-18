@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 3781946491668567737}
   m_Layer: 9
   m_Name: TeenUp
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,6 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 3557412633108205231}
   animator: {fileID: 3557412633108205230}
+  teen: {fileID: 2348137236596138029}
 --- !u!1 &6730052351496528270
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +330,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.31
 --- !u!50 &5077905622902056936
 Rigidbody2D:
   serializedVersion: 4

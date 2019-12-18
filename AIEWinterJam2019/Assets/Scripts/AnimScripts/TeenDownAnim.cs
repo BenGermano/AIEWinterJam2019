@@ -6,6 +6,7 @@ public class TeenDownAnim : MonoBehaviour
 {
     public BaseEnemyAI enemy;
     public Animator animator;
+    public TeenEnemyAttackAI teen;
 
     // Start is called before the first frame update
     void Start()
@@ -21,18 +22,29 @@ public class TeenDownAnim : MonoBehaviour
             animator.SetBool("Down", true);
             animator.SetBool("CarryUp", false);
             animator.SetBool("Carving", false);
+            animator.SetBool("Attack", false);
         }
         if (enemy.hasPumpkin == true)
         {
             animator.SetBool("CarryUp", true);
             animator.SetBool("Down", false);
             animator.SetBool("Carving", false);
+            animator.SetBool("Attack", false);
         }
         if (enemy.isCarving == true)
         {
             animator.SetBool("Carving", true);
             animator.SetBool("CarryUp", false);
             animator.SetBool("Down", false);
+            animator.SetBool("Attack", false);
         }
+        if (teen.isAttacking == true)
+        {
+            animator.SetBool("Attack", true);
+            animator.SetBool("Carving", false);
+            animator.SetBool("CarryDown", false);
+            animator.SetBool("Up", false);
+        }
+        else animator.SetBool("Attack", false);
     }
 }
