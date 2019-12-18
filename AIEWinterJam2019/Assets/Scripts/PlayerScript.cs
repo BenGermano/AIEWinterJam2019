@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -93,7 +94,7 @@ public class PlayerScript : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            Destroy(gameObject);
+            SceneManager.LoadScene("Loss");
             this.enabled = false;
         }
 
