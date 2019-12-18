@@ -362,6 +362,11 @@ PrefabInstance:
       propertyPath: pickup
       value: 
       objectReference: {fileID: 1185051723}
+    - target: {fileID: 3557412633108205231, guid: 4751ae4d64a620f4a92dc91136fe1b10,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1753342679}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4751ae4d64a620f4a92dc91136fe1b10, type: 3}
 --- !u!1 &196349910
@@ -557,6 +562,11 @@ PrefabInstance:
       propertyPath: spawn
       value: 
       objectReference: {fileID: 1788208015}
+    - target: {fileID: 2850936120280787337, guid: 9b3fb113c35e71048b89a8ae7b044442,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1753342679}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b3fb113c35e71048b89a8ae7b044442, type: 3}
 --- !u!1 &224223052
@@ -752,6 +762,11 @@ PrefabInstance:
       propertyPath: pickup
       value: 
       objectReference: {fileID: 401821365}
+    - target: {fileID: 3557412633108205231, guid: d1575a25fd50f6b42890be2d1880166f,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1753342679}
     - target: {fileID: 3781946491668567737, guid: d1575a25fd50f6b42890be2d1880166f,
         type: 3}
       propertyPath: teen
@@ -977,6 +992,11 @@ PrefabInstance:
       propertyPath: spawn
       value: 
       objectReference: {fileID: 1325031701}
+    - target: {fileID: 2850936120280787337, guid: 9b3fb113c35e71048b89a8ae7b044442,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1753342679}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b3fb113c35e71048b89a8ae7b044442, type: 3}
 --- !u!1 &306177178
@@ -1452,6 +1472,11 @@ PrefabInstance:
       propertyPath: spawn
       value: 
       objectReference: {fileID: 440343601}
+    - target: {fileID: 2850936120280787337, guid: 9b3fb113c35e71048b89a8ae7b044442,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1753342679}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b3fb113c35e71048b89a8ae7b044442, type: 3}
 --- !u!1 &534669902
@@ -2081,6 +2106,11 @@ PrefabInstance:
       propertyPath: pickup
       value: 
       objectReference: {fileID: 1182411575}
+    - target: {fileID: 2162486587752195572, guid: 1598d610f84994e49ba6342f51073354,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1753342679}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1598d610f84994e49ba6342f51073354, type: 3}
 --- !u!1 &1074901929
@@ -3161,6 +3191,11 @@ PrefabInstance:
       propertyPath: pickup
       value: 
       objectReference: {fileID: 1725720405}
+    - target: {fileID: 2162486587752195572, guid: 1598d610f84994e49ba6342f51073354,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1753342679}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1598d610f84994e49ba6342f51073354, type: 3}
 --- !u!1 &1411920125
@@ -3413,6 +3448,11 @@ PrefabInstance:
       propertyPath: pickup
       value: 
       objectReference: {fileID: 1622487953}
+    - target: {fileID: 3557412633108205231, guid: 4751ae4d64a620f4a92dc91136fe1b10,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1753342679}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4751ae4d64a620f4a92dc91136fe1b10, type: 3}
 --- !u!114 &1522055523 stripped
@@ -4153,6 +4193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentPlayersScript: {fileID: 1522055523}
   text: {fileID: 1753342678}
+  ellapsedTime: 0
 --- !u!222 &1753342680
 CanvasRenderer:
   m_ObjectHideFlags: 0

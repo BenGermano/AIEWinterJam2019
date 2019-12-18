@@ -7,6 +7,9 @@ public class BaseEnemyAI : MonoBehaviour
     // Player references.
     public PlayerScript player;
 
+    // Timer references.
+    public GameTimer gameTimeScript;
+
     // Waypoint game objects.
     public GameObject table;
     public GameObject pickup;
@@ -60,6 +63,7 @@ public class BaseEnemyAI : MonoBehaviour
         // Timer is used by carving, cooldown, and death, and prevents the Enemy from moving.
         if (timer <= 0)
         {
+            speedModifer = 1 + (gameTimeScript.ellapsedTime / 30);
             transform.position = Vector3.MoveTowards(transform.position, target.position, (speed * speedModifer) * Time.deltaTime);
         }
 
