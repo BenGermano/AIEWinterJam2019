@@ -6,6 +6,9 @@ public class PlayerAnimsTester : MonoBehaviour
 {
     public Animator animator;
     public AudioManager audioManager;
+    public AudioClip walkSound;
+    float sECooldown;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +27,6 @@ public class PlayerAnimsTester : MonoBehaviour
             animator.SetBool("Up", false);
             animator.SetBool("Down", false);
             animator.SetBool("Idle", false);
-            //audioManager.Play("PumpkinWalking");
         }
         else animator.SetBool("Right", false);
 
@@ -57,6 +59,15 @@ public class PlayerAnimsTester : MonoBehaviour
             animator.SetBool("Idle", false);
         }
         else animator.SetBool("Up", false);
+
+        // Audio testing
+        if(Input.GetKey(KeyCode.A) && sECooldown < Time.deltaTime)
+        {
+            Debug.Log("Audio Que");
+            
+            audioManager.Play("PumpkinWalking");
+            sECooldown += Time.deltaTime + .62f;
+        }
         #endregion
 
         #region Shooting
