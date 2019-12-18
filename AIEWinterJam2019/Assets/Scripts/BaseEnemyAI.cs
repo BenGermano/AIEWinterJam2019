@@ -23,7 +23,7 @@ public class BaseEnemyAI : MonoBehaviour
     public float spawnDelay = 0;
 
     // Components of the object.
-    private Transform target;
+    public Transform target;
     private SpriteRenderer spr;
     private BoxCollider2D col;
     private Rigidbody2D RB;
@@ -76,6 +76,7 @@ public class BaseEnemyAI : MonoBehaviour
         // Enemy gets to the table.
         if (ReferenceEquals(collision.gameObject, table))
         {
+            Debug.Log("Am Table");
             // If the enemy has a pumpkin, begin carving upon collision.
             // Carving is always 6 seconds.
             if (hasPumpkin)
@@ -89,6 +90,7 @@ public class BaseEnemyAI : MonoBehaviour
         // Enemy gets to the pumpkin pick-up point (PPP).
         if (ReferenceEquals(collision.gameObject, pickup))
         {
+            Debug.Log("Am Pickup");
             hasPumpkin = true;
             target = table.transform;
         }
@@ -96,6 +98,7 @@ public class BaseEnemyAI : MonoBehaviour
         // Enemy has died and has gone back to the spawnpoint.
         if (ReferenceEquals(collision.gameObject, spawn))
         {
+            Debug.Log("Am Respawning");
             speedModifer = 1;
             spr.enabled = true;
             dead = false;
