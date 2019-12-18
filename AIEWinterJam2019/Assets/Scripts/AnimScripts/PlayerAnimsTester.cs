@@ -64,8 +64,6 @@ public class PlayerAnimsTester : MonoBehaviour
         if(Input.GetKey(KeyCode.A) && sECooldown < Time.deltaTime)
         {
             Debug.Log("Audio Que");
-            
-            audioManager.Play("PumpkinWalking");
             sECooldown += Time.deltaTime + .62f;
         }
         #endregion
