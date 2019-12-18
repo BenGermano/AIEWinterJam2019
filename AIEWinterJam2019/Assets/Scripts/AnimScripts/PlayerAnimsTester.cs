@@ -61,11 +61,11 @@ public class PlayerAnimsTester : MonoBehaviour
         else animator.SetBool("Up", false);
 
         // Audio testing
-        if(Input.GetKey(KeyCode.A) && sECooldown < Time.deltaTime)
-        {
-            Debug.Log("Audio Que");
-            sECooldown += Time.deltaTime + .62f;
-        }
+        //if(Input.GetKey(KeyCode.A) && sECooldown < Time.deltaTime)
+        //{
+        //    Debug.Log("Audio Que");
+        //    sECooldown += Time.deltaTime + .62f;
+        //}
         #endregion
 
         #region Shooting
@@ -104,30 +104,35 @@ public class PlayerAnimsTester : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.S))
         {
             animator.SetBool("HitDown", true);
+            FindObjectOfType<AudioManager>().Play("PumpkinMelee");
         }
         else animator.SetBool("HitDown", false);
 
         if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.W))
         {
             animator.SetBool("HitUp", true);
+            FindObjectOfType<AudioManager>().Play("PumpkinMelee");
         }
         else animator.SetBool("HitUp", false);
 
         if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.A))
         {
             animator.SetBool("HitLeft", true);
+            FindObjectOfType<AudioManager>().Play("PumpkinMelee");
         }
         else animator.SetBool("HitLeft", false);
 
         if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.D))
         {
             animator.SetBool("HitRight", true);
+            FindObjectOfType<AudioManager>().Play("PumpkinMelee");
         }
         else animator.SetBool("HitRight", false);
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             animator.SetBool("HitDown", true);
+            FindObjectOfType<AudioManager>().Play("PumpkinMelee");
         }
         else animator.SetBool("HitDown", false);
         #endregion

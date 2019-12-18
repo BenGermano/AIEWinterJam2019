@@ -39,15 +39,15 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        Play("Music");
-        Play("PunkYell");
+       // Play("Music");
+       // Play("PunkYell");
        
     }
 
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        s.source.Play();
+       s.source.Play();
     }
 }
 

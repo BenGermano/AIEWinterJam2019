@@ -53,6 +53,7 @@ public class BaseEnemyAI : MonoBehaviour
                 Debug.Log("Foolish pumpkin,,,, you are TOO LATE.");
                 player.health -= 1;
                 StartCoroutine(Countdown(TimeToCountdownFrom()));
+                FindObjectOfType<AudioManager>().Play("Carving");
             }
         }
 
@@ -96,6 +97,7 @@ public class BaseEnemyAI : MonoBehaviour
             {
                 StartCoroutine(Countdown(4));
                 isCarving = true;
+                FindObjectOfType<AudioManager>().Play("Carving");
             }
             target = pickup.transform;
         }
@@ -155,5 +157,6 @@ public class BaseEnemyAI : MonoBehaviour
         target = spawn.transform;
         speedModifer = 100;
         timer = 0;
+        FindObjectOfType<AudioManager>().Play("EnemyDamaged");
     }
 }

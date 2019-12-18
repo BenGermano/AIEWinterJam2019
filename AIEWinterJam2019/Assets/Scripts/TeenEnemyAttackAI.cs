@@ -13,6 +13,7 @@ public class TeenEnemyAttackAI : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             isAttacking = true;
+            FindObjectOfType<AudioManager>().Play("EnemyMelee");
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
