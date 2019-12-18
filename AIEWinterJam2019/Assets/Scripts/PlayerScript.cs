@@ -94,7 +94,7 @@ public class PlayerScript : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            SceneManager.LoadScene("Loss");
+            SceneManager.LoadScene("GameOver");
             this.enabled = false;
         }
 
