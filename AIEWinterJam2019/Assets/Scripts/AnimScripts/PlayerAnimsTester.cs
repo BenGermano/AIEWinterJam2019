@@ -7,7 +7,8 @@ public class PlayerAnimsTester : MonoBehaviour
     public Animator animator;
     public AudioManager audioManager;
     public AudioClip walkSound;
-    float sECooldown;
+    public PlayerScript p;
+    public float sECooldown, maxDelay = 2;
     
 
     // Start is called before the first frame update
@@ -69,33 +70,38 @@ public class PlayerAnimsTester : MonoBehaviour
         #endregion
 
         #region Shooting
-        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.S) && sECooldown <= 0)
         {
             animator.SetBool("FireDown", true);
+            sECooldown = maxDelay;
         }
         else animator.SetBool("FireDown", false);
 
-        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.W) && sECooldown <= 0)
         {
             animator.SetBool("FireUp", true);
+            sECooldown = maxDelay;
         }
         else animator.SetBool("FireUp", false);
 
-        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.A) && sECooldown <= 0)
         {
             animator.SetBool("FireLeft", true);
+            sECooldown = maxDelay;
         }
         else animator.SetBool("FireLeft", false);
 
-        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.D) && sECooldown <= 0)
         {
             animator.SetBool("FireRight", true);
+            sECooldown = maxDelay;
         }
         else animator.SetBool("FireRight", false);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && sECooldown <= 0)
         {
             animator.SetBool("FireDown", true);
+            sECooldown = maxDelay;
         }
         else animator.SetBool("FireDown", false);
         #endregion
@@ -152,6 +158,10 @@ public class PlayerAnimsTester : MonoBehaviour
             animator.SetBool("FireLeft", false);
             animator.SetBool("FireRight", false);
             animator.SetBool("Idle", true);
+        }
+        if(sECooldown > 0)
+        {
+            sECooldown -= Time.deltaTime;
         }
     }
 }
