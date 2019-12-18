@@ -12,7 +12,6 @@ public class TeenEnemyAttackAI : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("UH OH");
             isAttacking = true;
         }
     }
@@ -20,7 +19,6 @@ public class TeenEnemyAttackAI : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("UH OH");
             isAttacking = false;
         }
     }

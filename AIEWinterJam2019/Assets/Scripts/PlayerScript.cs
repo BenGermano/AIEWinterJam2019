@@ -115,7 +115,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Hazard")
         {
-            Debug.Log("bruh");
+            //Debug.Log("bruh");
             health -= eDamage;
         }
     }

@@ -14,7 +14,7 @@ public class BaseEnemyAI : MonoBehaviour
     
     // Varables that control behaviour.
     public float speed;
-    private float timer = 0;
+    public  float timer = 0;
     public bool hasPumpkin = false;
     public bool isCarving = false;
     public bool dead = false;
@@ -51,7 +51,6 @@ public class BaseEnemyAI : MonoBehaviour
                 isCarving = false;
                 hasPumpkin = false;
                 Debug.Log("Foolish pumpkin,,,, you are TOO LATE.");
-                // TODO: Take a life from the player here!!!
                 player.health -= 1;
                 StartCoroutine(Countdown(TimeToCountdownFrom()));
             }
@@ -71,12 +70,26 @@ public class BaseEnemyAI : MonoBehaviour
         }
     }
 
+    // In case of the enemy getting stuck inside and not triggering OnEnter.
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (ReferenceEquals(other.gameObject, spawn))
+        {
+            //Debug.Log("Am Respawning");
+            speedModifer = 1;
+            spr.enabled = true;
+            dead = false;
+            target = table.transform;
+            StartCoroutine(Countdown(TimeToCountdownFrom()));
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Enemy gets to the table.
         if (ReferenceEquals(collision.gameObject, table))
         {
-            Debug.Log("Am Table");
+            //Debug.Log("Am Table");
             // If the enemy has a pumpkin, begin carving upon collision.
             // Carving is always 6 seconds.
             if (hasPumpkin)
@@ -90,7 +103,7 @@ public class BaseEnemyAI : MonoBehaviour
         // Enemy gets to the pumpkin pick-up point (PPP).
         if (ReferenceEquals(collision.gameObject, pickup))
         {
-            Debug.Log("Am Pickup");
+            //Debug.Log("Am Pickup");
             hasPumpkin = true;
             target = table.transform;
         }
@@ -98,7 +111,7 @@ public class BaseEnemyAI : MonoBehaviour
         // Enemy has died and has gone back to the spawnpoint.
         if (ReferenceEquals(collision.gameObject, spawn))
         {
-            Debug.Log("Am Respawning");
+            //Debug.Log("Am Respawning");
             speedModifer = 1;
             spr.enabled = true;
             dead = false;
@@ -126,10 +139,10 @@ public class BaseEnemyAI : MonoBehaviour
 
     private float TimeToCountdownFrom()
     {
-        // Generate a value from 0-4 then add 2 more to it.
+        // Generate a value from 0-2 then add 2 more to it.
         // You will have always have a 2 second minimum cooldown.
-        float temp = Random.Range(0, 4);
-        temp += 2;
+        float temp = Random.Range(0, 2);
+        temp += 1;
         return temp;
     }
 

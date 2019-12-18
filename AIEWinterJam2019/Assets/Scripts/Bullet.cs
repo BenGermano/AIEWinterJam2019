@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "NPC")
+        if(collision.gameObject.tag == "NPC" || collision.gameObject.tag == "Barrier")
         {
             Destroy(gameObject,0);
         }
