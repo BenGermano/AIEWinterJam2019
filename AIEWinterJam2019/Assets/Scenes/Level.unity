@@ -1408,6 +1408,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 278511569}
+    - target: {fileID: 4779173621435699515, guid: 3a0d080380baa114bacea18608bb10bf,
+        type: 3}
+      propertyPath: maxDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4779173621435699460, guid: 3a0d080380baa114bacea18608bb10bf,
         type: 3}
       propertyPath: m_LinearDrag
@@ -1432,6 +1437,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779173621435699456, guid: 3a0d080380baa114bacea18608bb10bf,
+        type: 3}
+      propertyPath: sECooldown
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0d080380baa114bacea18608bb10bf, type: 3}
