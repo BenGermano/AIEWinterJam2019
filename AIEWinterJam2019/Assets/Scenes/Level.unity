@@ -1441,6 +1441,11 @@ PrefabInstance:
     - target: {fileID: 4779173621435699456, guid: 3a0d080380baa114bacea18608bb10bf,
         type: 3}
       propertyPath: sECooldown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779173621435699456, guid: 3a0d080380baa114bacea18608bb10bf,
+        type: 3}
+      propertyPath: maxDelay
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
