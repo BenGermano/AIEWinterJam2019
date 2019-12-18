@@ -442,6 +442,8 @@ MonoBehaviour:
   health: 3
   eDamage: 1
   pDamage: 1
+  coolDown: 0
+  maxDelay: 2
   rb: {fileID: 4779173621435699460}
   bullet: {fileID: 5525010882883805308, guid: 507636e7379e5aa4789d99983ef42ed5, type: 3}
   nHB: {fileID: 4779173620011083703}
@@ -463,6 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4779173621435699457}
   audioManager: {fileID: 0}
+  walkSound: {fileID: 0}
 --- !u!50 &4779173621435699460
 Rigidbody2D:
   serializedVersion: 4

@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     public int health = 100;
     public int eDamage = 10;
     public int pDamage = 10;
+    public float coolDown = 5, maxDelay = 5;
     public Rigidbody2D rb;
     public GameObject bullet;
     public GameObject nHB, sHB, eHB, wHB;
@@ -70,36 +71,41 @@ public class PlayerScript : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.W) && coolDown <= 0)
         {
             GameObject pP = Instantiate(bullet, transform.position + transform.up * 0.3f, Quaternion.identity);
             pP.transform.right = Vector3.up;
             pP.GetComponent<Rigidbody2D>().AddForce(transform.up * seedSpeed);
+            coolDown = maxDelay;
         }
 
-        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.A) && coolDown <= 0)
         {
             GameObject pP = Instantiate(bullet, transform.position + transform.right * -0.25f, Quaternion.Euler(0,180,0));
             pP.GetComponent<Rigidbody2D>().AddForce(transform.right * -seedSpeed);
+            coolDown = maxDelay;
         }
 
-        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.S))
+        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.S) && coolDown <= 0)
         {
             GameObject pP = Instantiate(bullet, transform.position + transform.up * -0.2f, Quaternion.identity);
             pP.transform.right = Vector3.down;
             pP.GetComponent<Rigidbody2D>().AddForce(transform.up * -seedSpeed);
+            coolDown = maxDelay;
         }
 
-        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.D) && coolDown <= 0)
         {
             GameObject pP = Instantiate(bullet, transform.position + transform.right * 0.25f, Quaternion.identity);
             pP.GetComponent<Rigidbody2D>().AddForce(transform.right * seedSpeed);
+            coolDown = maxDelay;
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if (Input.GetKeyDown(KeyCode.Space) && coolDown <= 0)
         {
             GameObject pP = Instantiate(bullet, transform.position + transform.up * -0.2f, Quaternion.identity);
             pP.transform.right = Vector3.down;
             pP.GetComponent<Rigidbody2D>().AddForce(transform.up * -seedSpeed);
+            coolDown = maxDelay;
         }
         //When the player dies it will set their health to 0 to prevent healthbars from going into the negatives.
         if (health <= 0)
@@ -109,6 +115,11 @@ public class PlayerScript : MonoBehaviour
             this.enabled = false;
         }
 
+        //
+        if(coolDown > 0)
+        {
+            coolDown -= Time.deltaTime;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

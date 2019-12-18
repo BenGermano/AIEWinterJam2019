@@ -591,6 +591,7 @@ MonoBehaviour:
   pickup: {fileID: 937256063}
   spawn: {fileID: 1274232913}
   speed: 1
+  timer: 0
   hasPumpkin: 0
   isCarving: 0
   dead: 0
@@ -1101,6 +1102,7 @@ MonoBehaviour:
   pickup: {fileID: 1400904293}
   spawn: {fileID: 2145490736}
   speed: 1
+  timer: 0
   hasPumpkin: 0
   isCarving: 0
   dead: 0
@@ -1252,6 +1254,7 @@ MonoBehaviour:
   pickup: {fileID: 1400904293}
   spawn: {fileID: 2030297115}
   speed: 1
+  timer: 0
   hasPumpkin: 0
   isCarving: 0
   dead: 0
@@ -1689,6 +1692,7 @@ MonoBehaviour:
   pickup: {fileID: 937256063}
   spawn: {fileID: 1351752346}
   speed: 1
+  timer: 0
   hasPumpkin: 0
   isCarving: 0
   dead: 0
@@ -3162,5 +3166,15 @@ PrefabInstance:
       propertyPath: hC
       value: 
       objectReference: {fileID: 506568041}
+    - target: {fileID: 4779173621435699515, guid: 3a0d080380baa114bacea18608bb10bf,
+        type: 3}
+      propertyPath: coolDown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779173621435699515, guid: 3a0d080380baa114bacea18608bb10bf,
+        type: 3}
+      propertyPath: maxDelay
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0d080380baa114bacea18608bb10bf, type: 3}
