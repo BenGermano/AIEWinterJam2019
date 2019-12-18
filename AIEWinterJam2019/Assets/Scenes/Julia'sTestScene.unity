@@ -367,10 +367,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2100848721}
+  gameTimeScript: {fileID: 1737205194}
   table: {fileID: 1730197466}
   pickup: {fileID: 34322846}
   spawn: {fileID: 1145717640}
   speed: 1
+  timer: 0
   hasPumpkin: 0
   isCarving: 0
   dead: 0
@@ -742,10 +744,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2100848721}
+  gameTimeScript: {fileID: 0}
   table: {fileID: 2114569889}
   pickup: {fileID: 1408626130}
   spawn: {fileID: 493305686}
   speed: 1
+  timer: 0
   hasPumpkin: 0
   isCarving: 0
   dead: 0
@@ -940,10 +944,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2100848721}
+  gameTimeScript: {fileID: 1737205194}
   table: {fileID: 812111707}
   pickup: {fileID: 34322846}
   spawn: {fileID: 1683365256}
   speed: 1
+  timer: 0
   hasPumpkin: 0
   isCarving: 0
   dead: 0
@@ -1208,6 +1214,11 @@ PrefabInstance:
       propertyPath: spawn
       value: 
       objectReference: {fileID: 493305686}
+    - target: {fileID: 3557412633108205231, guid: d1575a25fd50f6b42890be2d1880166f,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1737205194}
     - target: {fileID: 3557412633108205230, guid: d1575a25fd50f6b42890be2d1880166f,
         type: 3}
       propertyPath: m_Enabled
@@ -1295,10 +1306,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2100848721}
+  gameTimeScript: {fileID: 0}
   table: {fileID: 949053574}
   pickup: {fileID: 1408626130}
   spawn: {fileID: 1141247065}
   speed: 1
+  timer: 0
   hasPumpkin: 0
   isCarving: 0
   dead: 0
@@ -1378,6 +1391,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeenDown
       objectReference: {fileID: 0}
+    - target: {fileID: 3557412633108205204, guid: 4751ae4d64a620f4a92dc91136fe1b10,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3557412633108205200, guid: 4751ae4d64a620f4a92dc91136fe1b10,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1453,6 +1471,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2100848721}
+    - target: {fileID: 3557412633108205231, guid: 4751ae4d64a620f4a92dc91136fe1b10,
+        type: 3}
+      propertyPath: gameTimeScript
+      value: 
+      objectReference: {fileID: 1737205194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4751ae4d64a620f4a92dc91136fe1b10, type: 3}
 --- !u!1 &949053574
@@ -2314,6 +2337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentPlayersScript: {fileID: 2100848721}
   text: {fileID: 1040048957}
+  ellapsedTime: 0
 --- !u!4 &1737205195
 Transform:
   m_ObjectHideFlags: 0

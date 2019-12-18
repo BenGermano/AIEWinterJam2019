@@ -10,8 +10,8 @@ public class GameTimer : MonoBehaviour
     public PlayerScript currentPlayersScript;
     public Text text;
 
-    float startTime;
-    float ellapsedTime;
+    private float startTime;
+    public float ellapsedTime;
 
     void Start()
     {
